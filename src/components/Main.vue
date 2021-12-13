@@ -15,20 +15,10 @@
                   <h4>Mens Grooming</h4>
                   <h2>Services</h2>
                   <div class="row">
-                      <div class="col-4 px-5 text-center">
-                          <img src="@/assets/avadabarbers-trimcut-icon-before.png" alt="">
-                          <h3>Trim & Cut</h3>
-                          <p>Avada Barbers are expert in the lickety trim and hair cut. Quick but careful amnd ridiculously good looking.</p>
-                      </div>
-                      <div class="col-4 px-5 text-center">
-                          <img src="@/assets/avadabarbers-washndry-icon.png" alt="">
-                          <h3>Wash & Dry</h3>
-                          <p>Taking a seat in our fine leather chairs, lean bacj and let us lather you a fresh head in a luxurious fashion.</p>
-                      </div>
-                      <div class="col-4 px-5 text-center">
-                          <img src="@/assets/avadabarbers-beardtrim-icon.png" alt="">
-                          <h3>Beard Tidy</h3>
-                          <p>Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.</p>
+                      <div v-for="(service, index) in services" :key="`${index}-service`" class="col-4 px-5 text-center">
+                          <img :src='require(`../assets/${service.img}.png`)' alt="">
+                          <h3>{{service.title}}</h3>
+                          <p>{{service.text}}</p>
                       </div>
                   </div>
                   <button class="site-btn">Read about our services</button>
@@ -41,25 +31,10 @@
                   <h4>We have you covered</h4>
                   <h2>Avada Grooming Products</h2>
                   <div class="row">
-                      <div class="col-3 text-center">
-                          <img src="@/assets/brush_dark-400x400.png" alt="">
-                          <h3>Brush</h3>
-                          <h5>$15.00</h5>
-                      </div>
-                      <div class="col-3 text-center">
-                          <img src="@/assets/scissors-400x400.png" alt="">
-                          <h3>Scissors</h3>
-                          <h5>$85.00</h5>
-                      </div>
-                      <div class="col-3 text-center">
-                          <img src="@/assets/hot_oil_dark-400x400.png" alt="">
-                          <h3>Hot Oil</h3>
-                          <h5>$15.00</h5>
-                      </div>
-                      <div class="col-3 text-center">
-                          <img src="@/assets/straight_razor_dark-400x400.png" alt="">
-                          <h3>Straight Razor</h3>
-                          <h5>$30.00</h5>
+                      <div v-for="(product, index) in products" :key="`product-${index}`" class="col-3 text-center">
+                          <img :src="require(`@/assets/${product.img}.png`)" alt="">
+                          <h3>{{product.title}}</h3>
+                          <h5>{{product.price}}</h5>
                       </div>
                   </div>
                   <button class="site-btn">Shop our produduct range</button>
@@ -86,20 +61,10 @@
                     <h4>What people say</h4>
                     <h2>Reviews</h2>
                     <div class="row">
-                        <div class="col-4 px-5 text-center">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis dignissimos debitis omnis laboriosam pariatur, illum harum dicta corporis aliquam voluptas praesentium dolore velit architecto eveniet minus. Provident, beatae eos!</p>
-                            <img src="@/assets/avadabarbers-trimcut-gallery6-200x200.jpg" alt="">
-                            <h5>John Doe</h5>
-                        </div>
-                        <div class="col-4 px-5 text-center">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis dignissimos debitis omnis laboriosam pariatur, illum harum dicta corporis aliquam voluptas praesentium dolore velit architecto eveniet minus. Provident, beatae eos!</p>
-                            <img src="@/assets/avadabarbers-trimcut-gallery7-200x201.jpg" alt="">
-                            <h5>Pete Jones</h5>
-                        </div>
-                        <div class="col-4 px-5 text-center">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis dignissimos debitis omnis laboriosam pariatur, illum harum dicta corporis aliquam voluptas praesentium dolore velit architecto eveniet minus. Provident, beatae eos!</p>
-                            <img src="@/assets/avadabarbers-trimcut-gallery3-200x201.jpg" alt="">
-                            <h5>Mark Wilson</h5>
+                        <div v-for="(review, index) in reviews" :key="`review-${index}`" class="col-4 px-5 text-center">
+                            <p>{{review.text}}</p>
+                            <img :src="require(`@/assets/${review.img}.jpg`)" alt="">
+                            <h5>{{review.name}}</h5>
                         </div>
                     </div>
                 </div>
@@ -112,20 +77,10 @@
                   <h4>Tales From The Barber Shop</h4>
                   <h2>Recent Blog Posts</h2>
                   <div class="row">
-                      <div class="col-4 px-5 text-center">
-                          <img src="@/assets/avadabarbers-second-blog-700x441.jpg" alt="">
-                          <h3>Avada Barbers Now Open</h3>
-                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint provident fugiat reprehenderit. Ducimus provident eligendi neque officiis corrupti asperiores, non deserunt voluptate, autem alias suscipit commodi, optio sapiente? Quidem, soluta.</p>
-                      </div>
-                      <div class="col-4 px-5 text-center">
-                          <img src="@/assets/avadabarbers-choosing-blog-700x441.jpg" alt="">
-                          <h3>Avada Barbers Now Open</h3>
-                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint provident fugiat reprehenderit. Ducimus provident eligendi neque officiis corrupti asperiores, non deserunt voluptate, autem alias suscipit commodi, optio sapiente? Quidem, soluta.</p>
-                      </div>
-                      <div class="col-4 px-5 text-center">
-                          <img src="@/assets/avadabarbers-ourservice-blog-700x441.jpg" alt="">
-                          <h3>Avada Barbers Now Open</h3>
-                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint provident fugiat reprehenderit. Ducimus provident eligendi neque officiis corrupti asperiores, non deserunt voluptate, autem alias suscipit commodi, optio sapiente? Quidem, soluta.</p>
+                      <div v-for="(blogPost, index) in blogPosts" :key="`blogPost-${index}`" class="col-4 px-5 text-center">
+                          <img :src="require(`@/assets/${blogPost.img}.jpg`)" alt="">
+                          <h3>{{blogPost.title}}</h3>
+                          <p>{{blogPost.text}}</p>
                       </div>
                   </div>
                   <button class="site-btn">Read more fro our blog</button>
@@ -138,6 +93,84 @@
 <script>
 export default {
     name: 'Main',
+    data() {
+        return {
+            services: [
+                {
+                    img: 'avadabarbers-trimcut-icon-before',
+                    title: 'Trim & Cut',
+                    text: 'Avada Barbers are expert in the lickety trim and hair cut. Quick but careful amnd ridiculously good looking.'
+                },
+                {
+                    img: 'avadabarbers-washndry-icon',
+                    title: 'Wash & Dry',
+                    text: 'Taking a seat in our fine leather chairs, lean bacj and let us lather you a fresh head in a luxurious fashion.'
+                },
+                {
+                    img: 'avadabarbers-beardtrim-icon',
+                    title: 'Beard Tidy',
+                    text: 'Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.',
+                },
+            ],
+            products: [
+                {
+                    img: 'brush_dark-400x400',
+                    title: 'Brush',
+                    price: '$15.00', 
+                },
+                {
+                    img: 'scissors-400x400',
+                    title: 'Scissors',
+                    price: '$85.00',
+                },
+                {
+                    img: 'hot_oil_dark-400x400',
+                    title: 'Hot Oil',
+                    price: '$15.00',
+                },
+                {
+                    img: 'straight_razor_dark-400x400',
+                    title: 'Straight Razor',
+                    price: '$30.00',
+                },
+            ],
+            reviews: [
+                {
+                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis dignissimos debitis omnis laboriosam pariatur, illum harum dicta corporis aliquam voluptas praesentium dolore velit architecto eveniet minus. Provident, beatae eos!',
+                    img: 'avadabarbers-trimcut-gallery6-200x200',
+                    name: 'John Doe',
+                },
+                {
+                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis dignissimos debitis omnis laboriosam pariatur, illum harum dicta corporis aliquam voluptas praesentium dolore velit architecto eveniet minus. Provident, beatae eos!',
+                    img: 'avadabarbers-trimcut-gallery7-200x201',
+                    name: 'Pete Jones',
+                },
+                {
+                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis dignissimos debitis omnis laboriosam pariatur, illum harum dicta corporis aliquam voluptas praesentium dolore velit architecto eveniet minus. Provident, beatae eos!',
+                    img: 'avadabarbers-trimcut-gallery3-200x201',
+                    name: 'Mark Wilson',
+                },
+            ],
+            blogPosts: [
+                {
+                    img: 'avadabarbers-second-blog-700x441',
+                    title: 'Avada Barbers Now Open',
+                    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint provident fugiat reprehenderit. Ducimus provident eligendi neque officiis corrupti asperiores, non deserunt voluptate, autem alias suscipit commodi, optio sapiente? Quidem, soluta.'
+                },
+                {
+                    img: 'avadabarbers-choosing-blog-700x441',
+                    title: 'Choosing The Right Barber',
+                    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint provident fugiat reprehenderit. Ducimus provident eligendi neque officiis corrupti asperiores, non deserunt voluptate, autem alias suscipit commodi, optio sapiente? Quidem, soluta.'
+                },
+                {
+                    img: 'avadabarbers-ourservice-blog-700x441',
+                    title: 'Quick Service Guide',
+                    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint provident fugiat reprehenderit. Ducimus provident eligendi neque officiis corrupti asperiores, non deserunt voluptate, autem alias suscipit commodi, optio sapiente? Quidem, soluta.',
+                },
+            ],
+
+        }
+    }
 }
 </script>
 

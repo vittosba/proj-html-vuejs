@@ -43,13 +43,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/globals';
+@import '@/styles/variables';
 
     header {
         position: relative;
         background-image: url('../assets/avadabarbers-homepage-hero-bg.jpg');
         background-size: cover;
         background-position: center;
-        color: white;
+        color: $sec-col;
         nav {
             display: flex;
             justify-content: space-between;
@@ -75,18 +77,13 @@ export default {
                 }
 
                 .left-side {
-                    h1 {
-                        font-size: 3.5rem;
-                    }
                     hr {
                         width: 25%;
-                        border: 1.5px solid #ae8652;
+                        border: 1.5px solid $pri-col;
                         opacity: 1;
                     }
                     p {
                         padding: 1rem 0;
-                        font-size: 0.9rem;
-                        color: #505050;
                     }
                 }
             }

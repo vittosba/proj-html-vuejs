@@ -27,16 +27,6 @@ export default {
 </script>
 
 <style lang="scss">
-  .site-btn {
-    border: 1px solid #ae8652;
-    color: #ae8652;
-    background: none;
-    text-transform: uppercase;
-    padding: 5px 16px;
-  }
+@import '@/styles/globals';
 
-  h1,h2,h3,h4,h5,h6 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700 !important;
-  }
 </style>

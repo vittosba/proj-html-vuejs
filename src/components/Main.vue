@@ -107,6 +107,30 @@
           </div>
 
           <!-- blog posts -->
+          <div class="blog-posts">
+              <div class="container">
+                  <h4>Tales From The Barber Shop</h4>
+                  <h2>Recent Blog Posts</h2>
+                  <div class="row">
+                      <div class="col-4 px-5 text-center">
+                          <img src="@/assets/avadabarbers-second-blog-700x441.jpg" alt="">
+                          <h3>Avada Barbers Now Open</h3>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint provident fugiat reprehenderit. Ducimus provident eligendi neque officiis corrupti asperiores, non deserunt voluptate, autem alias suscipit commodi, optio sapiente? Quidem, soluta.</p>
+                      </div>
+                      <div class="col-4 px-5 text-center">
+                          <img src="@/assets/avadabarbers-choosing-blog-700x441.jpg" alt="">
+                          <h3>Avada Barbers Now Open</h3>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint provident fugiat reprehenderit. Ducimus provident eligendi neque officiis corrupti asperiores, non deserunt voluptate, autem alias suscipit commodi, optio sapiente? Quidem, soluta.</p>
+                      </div>
+                      <div class="col-4 px-5 text-center">
+                          <img src="@/assets/avadabarbers-ourservice-blog-700x441.jpg" alt="">
+                          <h3>Avada Barbers Now Open</h3>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint provident fugiat reprehenderit. Ducimus provident eligendi neque officiis corrupti asperiores, non deserunt voluptate, autem alias suscipit commodi, optio sapiente? Quidem, soluta.</p>
+                      </div>
+                  </div>
+                  <button class="site-btn">Read more fro our blog</button>
+              </div>
+          </div>
 
   </main>
 </template>
@@ -201,6 +225,15 @@ export default {
             }
         }
 
+    }
+
+    .blog-posts {
+        background: #f5f5f5;
+        padding: 5rem 0;
+
+        img {
+            max-width: 100%;
+        }
     }
 
 </style>

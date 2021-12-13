@@ -36,6 +36,35 @@
           </div>
 
           <!-- products -->
+          <div class="products">
+              <div class="container">
+                  <h4>We have you covered</h4>
+                  <h2>Avada Grooming Products</h2>
+                  <div class="row">
+                      <div class="col-3 text-center">
+                          <img src="@/assets/brush_dark-400x400.png" alt="">
+                          <h3>Brush</h3>
+                          <h4>$15.00</h4>
+                      </div>
+                      <div class="col-3 text-center">
+                          <img src="@/assets/scissors-400x400.png" alt="">
+                          <h3>Scissors</h3>
+                          <h4>$85.00</h4>
+                      </div>
+                      <div class="col-3 text-center">
+                          <img src="@/assets/hot_oil_dark-400x400.png" alt="">
+                          <h3>Hot Oil</h3>
+                          <h4>$15.00</h4>
+                      </div>
+                      <div class="col-3 text-center">
+                          <img src="@/assets/straight_razor_dark-400x400.png" alt="">
+                          <h3>Straight Razor</h3>
+                          <h4>$30.00</h4>
+                      </div>
+                  </div>
+                  <button class="site-btn">Shop our produduct range</button>
+              </div>
+          </div>
 
           <!-- reviews -->
 
@@ -81,6 +110,21 @@ export default {
 
             img {
                 height: 150px;
+            }
+        }
+    }
+
+    .products {
+        background-image: url('../assets/avadabarbers-reviewsbackground.jpg');
+        background-position: center;
+        background-size: contain;
+        padding: 5rem 0;
+
+        .row {
+            margin: 2rem 0;
+
+            img {
+                max-width: 100%;
             }
         }
     }

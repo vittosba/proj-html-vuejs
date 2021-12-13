@@ -44,22 +44,22 @@
                       <div class="col-3 text-center">
                           <img src="@/assets/brush_dark-400x400.png" alt="">
                           <h3>Brush</h3>
-                          <h4>$15.00</h4>
+                          <h5>$15.00</h5>
                       </div>
                       <div class="col-3 text-center">
                           <img src="@/assets/scissors-400x400.png" alt="">
                           <h3>Scissors</h3>
-                          <h4>$85.00</h4>
+                          <h5>$85.00</h5>
                       </div>
                       <div class="col-3 text-center">
                           <img src="@/assets/hot_oil_dark-400x400.png" alt="">
                           <h3>Hot Oil</h3>
-                          <h4>$15.00</h4>
+                          <h5>$15.00</h5>
                       </div>
                       <div class="col-3 text-center">
                           <img src="@/assets/straight_razor_dark-400x400.png" alt="">
                           <h3>Straight Razor</h3>
-                          <h4>$30.00</h4>
+                          <h5>$30.00</h5>
                       </div>
                   </div>
                   <button class="site-btn">Shop our produduct range</button>
@@ -67,6 +67,44 @@
           </div>
 
           <!-- reviews -->
+          <div class="reviews-section">
+              <div class="container">
+                <div class="call-to-action">
+                    <div class="row justify-content-center">
+                        <div class="col-4 text-center">
+                            <img src="@/assets/shaving_butter-400x400.png" alt="">
+                        </div>
+                        <div class="col-6">
+                            <h4>This months featured product</h4>
+                            <h2>Shaving Butter</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, voluptatem suscipit nemo cum quis molestias in, nihil autem maxime accusantium odit rerum alias quibusdam voluptate repudiandae neque? Animi, molestiae natus.</p>
+                            <button class="site-btn">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews text-center">
+                    <h4>What people say</h4>
+                    <h2>Reviews</h2>
+                    <div class="row">
+                        <div class="col-4 px-5 text-center">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis dignissimos debitis omnis laboriosam pariatur, illum harum dicta corporis aliquam voluptas praesentium dolore velit architecto eveniet minus. Provident, beatae eos!</p>
+                            <img src="@/assets/avadabarbers-trimcut-gallery6-200x200.jpg" alt="">
+                            <h5>John Doe</h5>
+                        </div>
+                        <div class="col-4 px-5 text-center">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis dignissimos debitis omnis laboriosam pariatur, illum harum dicta corporis aliquam voluptas praesentium dolore velit architecto eveniet minus. Provident, beatae eos!</p>
+                            <img src="@/assets/avadabarbers-trimcut-gallery7-200x201.jpg" alt="">
+                            <h5>Pete Jones</h5>
+                        </div>
+                        <div class="col-4 px-5 text-center">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis dignissimos debitis omnis laboriosam pariatur, illum harum dicta corporis aliquam voluptas praesentium dolore velit architecto eveniet minus. Provident, beatae eos!</p>
+                            <img src="@/assets/avadabarbers-trimcut-gallery3-200x201.jpg" alt="">
+                            <h5>Mark Wilson</h5>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
 
           <!-- blog posts -->
 
@@ -127,6 +165,42 @@ export default {
                 max-width: 100%;
             }
         }
+    }
+
+    .reviews-section {
+        .container {
+            .call-to-action {
+                transform: translateY(-20px);
+    
+                .col-4 {
+                    background-image: url('../assets/avadabarbers-cta-background.jpg');
+                    background-size: cover;
+                    border-top: 2px solid $pri-col;
+
+    
+                    img {
+                        max-width: 100%;
+                    }
+                }
+
+                .col-6 {
+                    background: #000;
+                    padding: 4rem 3rem;
+                    border-top: 2px solid $pri-col;
+                }
+            }
+
+            .reviews {
+                padding: 5rem 0;
+
+                img {
+                    width: 40%;
+                    border-radius: 50%;
+                    margin: 10px;
+                }
+            }
+        }
+
     }
 
 </style>

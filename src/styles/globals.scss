@@ -19,6 +19,10 @@ h2 {
     color: $thi-col;
 }
 
+h3 {
+    color: $pri-col;
+}
+
 h4 {
     font-size: 0.7rem;
     color: $pri-col;
@@ -31,7 +35,7 @@ p {
 }
 
 .site-btn {
-    border: 1px solid $pri-col;
+    border: 2px solid $pri-col;
     color: $pri-col;
     background: none;
     text-transform: uppercase;
